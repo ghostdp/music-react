@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+	<style>
+	*{ margin:0; padding:0;}
+	html{ width:100%; height:100%; overflow:hidden;}
+	body{ width:100%; height:100%; font: 14px/1.5 Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;}
+	li{ list-style:none;}
+	#main{ width:100%; height:100%; position:relative; margin:0 auto;}
+	
+	#musicHeader{ width:100%; height: 50px; background:black; position: absolute; left: 0; top: 0; color:white; text-align: center; line-height: 50px; font-size: 18px;}
+	#musicList{ width: 100%; position: absolute; top:50px; bottom:65px; background:url(images/bg.jpg); background-size: cover; color:white; overflow-y: auto; }
+	#musicList li{ height:60px; border-bottom: 1px #999 solid; background: rgba(0,0,0,0.5); }
+	#musicList li.active{ border-left:4px lightblue solid; }
+	#musicList .listOrder{ width:60px; float: left; font-size: 20px; line-height: 60px; text-align: center; }
+	#musicList .listName{ float: left; }
+	#musicList .listName h3{ margin-top: 10px; }
+	#musicList .listName p{}
+
+	#musicAudio{ width:100%; height: 65px; background:url(images/list_audioBg.png); position: absolute; left:0; bottom: 0; display: flex; }
+	#musicAudio .audioPlay{ width:40px;  height:40px; background:url(images/list_audioPause.png); background-size:cover; margin:10px 20px;}
+	#musicAudio .audioProgress{ height:2px; background:white; position: relative; flex:1; top:31px; margin-right: 20px;}
+	#musicAudio .audioBar{ width:15px; height:15px; background:#29abe2; border-radius:50%; position:absolute; left:0; top:0; margin:-7px; }
+	#musicAudio .audioNow{ width:0; height:2px; background:#29abe2; position:absolute; left:0; top:0; }
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="musicHeader">
+			巅峰榜 · 热歌
+		</div>
+		<div id="musicList">
+			<ul>
+				<li>
+					<div class="listOrder">1</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li class="active">
+					<div class="listOrder">1</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">2</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">3</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">4</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">5</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">6</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">7</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">8</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">9</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">10</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+				<li>
+					<div class="listOrder">11</div>
+					<div class="listName">
+						<h3>如歌</h3>
+						<p>张杰 ·《烈火如歌》电视剧主题曲</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="musicAudio">
+			<div class="audioPlay"></div>
+			<div class="audioProgress">
+				<div class="audioBar"></div>
+				<div class="audioNow"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

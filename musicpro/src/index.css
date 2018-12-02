@@ -1,0 +1,5 @@
+*{ margin:0; padding:0;}
+html{ width:100%; height:100%; overflow:hidden;}
+body{ width:100%; height:100%; font: 14px/1.5 Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;}
+li{ list-style:none;}
+#root , #main{ width:100%; height:100%; position:relative; margin:0 auto;}
